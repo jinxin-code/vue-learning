@@ -1,0 +1,6 @@
+{
+  "workspaces": {
+    "supported": true
+  },
+  "typescript.tsdk": "packages/uniapp-learning/node_modules/typescript/lib"
+}
