@@ -4,8 +4,8 @@
 
 ## 📦 项目列表
 
-### packages/vue-learning
-Vue 3 用户管理系统 - 学习 Vue 3 的实践项目
+### packages/vue-web-learning
+Vue 3 用户管理系统 - 学习 Vue 3 的 Web 实践项目
 
 **功能**:
 - 用户列表展示（卡片形式）
@@ -19,7 +19,7 @@ Vue 3 用户管理系统 - 学习 Vue 3 的实践项目
 
 **快速开始**:
 ```bash
-cd packages/vue-learning
+cd packages/vue-web-learning
 npm install
 npm run dev
 ```
@@ -57,13 +57,13 @@ npm install
 
 ### 开发命令
 ```bash
-npm run dev:vue       # Vue 项目开发
+npm run dev:vue       # Vue Web 项目开发
 npm run dev:uniapp    # UniApp H5 开发
 ```
 
 ### 构建命令
 ```bash
-npm run build:vue          # Vue 项目构建
+npm run build:vue          # Vue Web 项目构建
 npm run build:uniapp       # UniApp H5 构建
 npm run build:uniapp:mp     # 微信小程序构建
 ```
@@ -80,15 +80,15 @@ npm run clean              # 清理所有构建产物
 ```
 frontend-learning/
 ├── packages/
-│   ├── vue-learning/      # Vue 3 项目
+│   ├── vue-web-learning/   # Vue 3 Web 项目
 │   │   ├── src/
 │   │   ├── public/
 │   │   └── package.json
-│   └── uniapp-learning/   # UniApp 项目
+│   └── uniapp-learning/    # UniApp 项目
 │       ├── src/
 │       └── package.json
 ├── .vscode/
-├── package.json           # 根目录（npm Workspaces）
+├── package.json            # 根目录（npm Workspaces）
 ├── .npmrc
 ├── .gitignore
 └── README.md
@@ -98,7 +98,7 @@ frontend-learning/
 
 ## 🌐 支持平台
 
-### Vue Learning
+### Vue Web Learning
 - ✅ Web (Chrome, Firefox, Safari, Edge)
 
 ### UniApp Learning
@@ -132,8 +132,8 @@ MIT License
 
 ## 📦 Projects
 
-### packages/vue-learning
-Vue 3 User Management System - A hands-on learning project for Vue 3
+### packages/vue-web-learning
+Vue 3 User Management System - A hands-on Web learning project for Vue 3
 
 **Features**:
 - User list display (card layout)
@@ -147,7 +147,7 @@ Vue 3 User Management System - A hands-on learning project for Vue 3
 
 **Quick Start**:
 ```bash
-cd packages/vue-learning
+cd packages/vue-web-learning
 npm install
 npm run dev
 ```
@@ -185,13 +185,13 @@ npm install
 
 ### Development Scripts
 ```bash
-npm run dev:vue       # Vue project development
+npm run dev:vue       # Vue Web project development
 npm run dev:uniapp    # UniApp H5 development
 ```
 
 ### Build Scripts
 ```bash
-npm run build:vue         # Vue project build
+npm run build:vue         # Vue Web project build
 npm run build:uniapp      # UniApp H5 build
 npm run build:uniapp:mp   # WeChat Mini Program build
 ```
@@ -208,7 +208,7 @@ npm run clean             # Clean all build outputs
 ```
 frontend-learning/
 ├── packages/
-│   ├── vue-learning/      # Vue 3 project
+│   ├── vue-web-learning/  # Vue 3 Web project
 │   │   ├── src/
 │   │   ├── public/
 │   │   └── package.json
@@ -226,7 +226,7 @@ frontend-learning/
 
 ## 🌐 Supported Platforms
 
-### Vue Learning
+### Vue Web Learning
 - ✅ Web (Chrome, Firefox, Safari, Edge)
 
 ### UniApp Learning
