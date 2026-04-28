@@ -1,0 +1,42 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "用户列表",
+        "navigationBarBackgroundColor": "#4080ff",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/detail/detail",
+      "style": {
+        "navigationBarTitleText": "用户详情",
+        "navigationBarBackgroundColor": "#4080ff",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/edit/edit",
+      "style": {
+        "navigationBarTitleText": "编辑用户",
+        "navigationBarBackgroundColor": "#4080ff",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/add/add",
+      "style": {
+        "navigationBarTitleText": "新增用户",
+        "navigationBarBackgroundColor": "#4080ff",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "用户管理",
+    "navigationBarBackgroundColor": "#4080ff",
+    "backgroundColor": "#f5f5f5"
+  }
+}

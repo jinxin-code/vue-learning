@@ -1,117 +1,115 @@
-# Vue User Management System / Vue 用户管理系统
+# Frontend Learning / 前端学习项目
 
-A modern user management application built with Vue 3, featuring comprehensive CRUD operations, real-time search, filtering, and a responsive design.
+一个包含多个前端学习项目的 Monorepo 仓库，使用 npm Workspaces 管理。
 
-一个现代化的用户管理应用，使用 Vue 3 构建，具有完整的增删改查功能、实时搜索、筛选功能和响应式设计。
+## 📦 项目列表
 
-## Features / 功能特点
+### packages/vue-learning
+Vue 3 用户管理系统 - 学习 Vue 3 的实践项目
 
-- **用户列表展示** - User List Display
-  - 以卡片形式展示所有用户信息 / Display all users in card layout
-  - 显示用户姓名、用户名、邮箱 / Show name, username, and email
+**仓库**: [https://github.com/jinxin-code/vue-learning](https://github.com/jinxin-code/vue-learning)
 
-- **用户详情查看** - User Detail View
-  - 展示用户的完整信息 / Display complete user information
-  - 包括地址、公司信息等 / Including address and company details
+**功能**:
+- 用户列表展示（卡片形式）
+- 用户详情查看
+- 实时搜索（支持姓名/用户名）
+- 多条件筛选（首字母、邮箱域名、姓名长度）
+- 用户增删改查
+- 表单验证
 
-- **实时搜索** - Real-time Search
-  - 支持按姓名或用户名搜索 / Search by name or username
-  - 防抖优化，300ms 延迟 / Debounced for better performance
+**技术栈**: Vue 3 + Vue Router 4 + Vite + Fetch API
 
-- **多条件筛选** - Multi-filter Support
-  - 按用户名首字母筛选 / Filter by first letter of username
-  - 按邮箱域名筛选 / Filter by email domain
-  - 按姓名长度筛选 / Filter by name length
-
-- **用户编辑** - User Editing
-  - 修改用户姓名、用户名、邮箱 / Edit name, username, email
-  - 表单验证，确保数据完整 / Form validation
-
-- **用户新增** - Add New User
-  - 创建新用户 / Create new user
-  - 完整的表单验证 / Complete form validation
-
-- **用户删除** - User Deletion
-  - 删除确认弹窗 / Delete confirmation modal
-  - 双重确认机制 / Double confirmation
-
-## Tech Stack / 技术栈
-
-- **Vue 3** - The Progressive JavaScript Framework
-- **Vue Router 4** - The official router for Vue.js
-- **Vite** - Next Generation Frontend Tooling
-- **Fetch API** - Modern network request
-
-## Project Structure / 项目结构
-
-```
-src/
-├── components/          # 公共组件 / Public Components
-│   ├── DeleteConfirmModal.vue
-│   ├── FilterBar.vue
-│   ├── LoadingSpinner.vue
-│   ├── SearchBar.vue
-│   ├── Toast.vue
-│   ├── UserCard.vue
-│   └── UserForm.vue
-├── composables/         # 组合式函数 / Composables
-│   └── useUsers.js      # 用户数据管理 / User data management
-├── router/             # 路由配置 / Router Configuration
-│   └── index.js
-├── views/             # 页面视图 / Page Views
-│   ├── UserListView.vue
-│   ├── UserDetailView.vue
-│   ├── UserEditView.vue
-│   └── UserNewView.vue
-├── App.vue            # 根组件 / Root Component
-├── main.js            # 应用入口 / Application Entry
-└── style.css          # 全局样式 / Global Styles
-```
-
-## Installation / 安装
-
+**快速开始**:
 ```bash
-# 安装依赖 / Install dependencies
+cd packages/vue-learning
 npm install
-
-# 开发模式 / Development mode
 npm run dev
-
-# 构建生产版本 / Build for production
-npm run build
-
-# 预览生产版本 / Preview production build
-npm run preview
 ```
 
-## API / 接口
+---
 
-本项目使用 [JSONPlaceholder](https://jsonplaceholder.typicode.com) 提供模拟 API 服务。
+### packages/uniapp-learning
+UniApp 跨平台用户管理系统 - 一套代码多端运行
 
-This project uses [JSONPlaceholder](https://jsonplaceholder.typicode.com) as a mock API service.
+**功能**:
+- 用户列表展示
+- 用户详情查看
+- 搜索和筛选
+- 用户增删改查
+- 支持 H5、微信小程序、iOS、Android
 
-- Base URL: `https://jsonplaceholder.typicode.com`
-- Users API: `/users`
+**技术栈**: UniApp (Vue 3) + TypeScript + Vite + uni.request
 
-## Learning Notes / 学习笔记
+**快速开始**:
+```bash
+cd packages/uniapp-learning
+npm install
+npm run dev:h5        # H5 开发
+npm run dev:mp-weixin   # 微信小程序开发
+```
 
-这个项目是用于学习 Vue 3 的实践项目，涵盖了以下核心概念：
+---
 
-This project is a hands-on learning exercise for Vue 3, covering these key concepts:
+## 🛠️ Monorepo 管理
 
-- **Composition API** - 组合式 API 的使用方式
-- **Reactivity** - 响应式系统的原理和使用
-- **Props & Events** - 父子组件通信
-- **Router** - Vue Router 的配置和使用
-- **Lifecycle Hooks** - 生命周期钩子
-- **Computed Properties** - 计算属性
-- **Watch** - 侦听器
-- **Composables** - 组合式函数
+### 安装所有依赖
+```bash
+npm install
+```
 
-## License / 许可证
+### 开发命令
+```bash
+# Vue 项目开发
+npm run dev:vue
+
+# UniApp H5 开发
+npm run dev:uniapp
+```
+
+### 构建命令
+```bash
+# Vue 项目构建
+npm run build:vue
+
+# UniApp H5 构建
+npm run build:uniapp
+```
+
+## 📁 目录结构
+
+```
+frontend-learning/
+├── packages/
+│   ├── vue-learning/      # Vue 3 项目
+│   │   ├── src/
+│   │   ├── package.json
+│   │   └── ...
+│   └── uniapp-learning/   # UniApp 项目
+│       ├── src/
+│       ├── package.json
+│       └── ...
+├── package.json           # 根目录（工作区配置）
+└── README.md
+```
+
+## 🌐 支持平台
+
+### Vue Learning
+- ✅ Web (Chrome, Firefox, Safari, Edge)
+
+### UniApp Learning
+- ✅ H5
+- ✅ 微信小程序
+- ✅ iOS (需通过 HBuilderX 打包)
+- ✅ Android (需通过 HBuilderX 打包)
+
+## 📚 学习资源
+
+- [Vue 3 官方文档](https://vuejs.org/)
+- [UniApp 官方文档](https://uniapp.dcloud.net.cn/)
+- [Vite 官方文档](https://vitejs.dev/)
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+
+## 📝 License
 
 MIT License
-
-## Author / 作者
-
-Calvin
